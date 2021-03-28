@@ -1,0 +1,250 @@
+/*RESET CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*BASE STYLE*/
+body{
+    color: white;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+}
+.wrapper{
+   width: 1120px;
+   height: 100%;
+   margin: 0 auto;
+}
+/*header*/
+.page_header{
+    height: 66px;
+    background: rgba(0,0,0,0.8);
+    position: absolute;/*collages pic with heading*/
+    left: 0;
+    top: 0;
+    width: 100%;/*for full menu*/
+    position: fixed;
+}
+
+.page_header .logo{
+    float: left;
+    padding-top: 23px;
+    box-sizing: border-box;
+    
+}
+.page_header .main_nav{
+    float: right;
+}
+.main_nav li{
+    float: left;
+    margin-left: 90px;
+    /*padding-top: 23px; can also be used*/
+}
+.main_nav li a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 66px; /*bring it to centre*/
+}
+.main_nav li a:hover{
+    color: red;
+}
+
+
+/*main*/
+/*banner*/
+.banner{
+    height: 612px;
+    background: url(../images/food.r.jpg);
+    background-size: cover; /*stretch out image*/
+    padding-top: 230px; /*to bring down,not margin(it brings all down*/
+    box-sizing: border-box;
+} 
+.banner_block{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 60px;
+        font-weight: bold;
+        text-align: center;
+}
+h1{
+    text-transform: uppercase;
+    color: black;
+}
+.subtitle{
+    font-size: 21px;
+   
+    
+   
+    
+    
+    
+    font-weight: 500;
+   margin: 25px 0;/*for space b/w the three texts*/
+   color:black;
+}
+.learn-more{
+    display: block;
+    padding: 20px 30px;
+    color: inherit;
+    text-transform: uppercase;
+    background: #ca0500;
+    text-decoration: none;
+    font-size: 14px;
+    width: 166px;
+    box-sizing: border-box; /* to decrease the size*/
+   margin: 0 auto; /*to bring middle*/
+ 
+}
+.learn-more:hover{
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+    border: 1px solid red;
+}
+/*articles*/
+.articles{background: #fff9fa; /* Old browsers */
+background: -moz-linear-gradient(-20deg, #fff9fa 0%, #fcfdff 50%, #000000 50%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(--5deg, #fff9fa 0%,#fcfdff 50%,#000000 50%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(95deg, #fff9fa 0%,#fcfdff 50%,#000000 50%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.articles>.wrapper::after, .page-footer>.wrapper::after{
+    content: ".";
+    font-size: 0;
+    height: 1px;
+    width: 100%;
+    display: block;
+    clear: both;/* for visibility*/
+}
+article{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 60px; /*top para space*/
+    
+
+}
+article:first-of-type{
+    padding-right: 65px;
+    color: #1b1b1b;
+
+}
+article:last-of-type{
+    padding-left:  65px;
+    
+}
+h2{
+    font-size: 36px;
+    font-weight: 300;
+}
+h2::after{
+    content: ".";
+    font-size: 0;
+    display: block;
+    height: 2px;
+    width: 38px;
+    background: #ca0500;
+    margin: 25px 0 28px;
+}
+.quote{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.text{
+    font-weight: 300;
+    margin-bottom: 60px;/*gap bw two para*/
+}
+/*footer*/
+.page-footer{
+    background: #111111;
+    padding-top: 25px;
+    
+}
+.page-footer li:hover{
+    color: white;
+    cursor: pointer;/*display hand*/
+}
+.footer_col{
+    width: 25%;
+    float: left;/*no float*/
+}
+.page-footer h3{
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.page-footer li{
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.6;
+}
+.page-footer h3::after{
+    content: ".";
+    font-size: 0;
+    display: block;
+    height: 1px;
+    width: 90%;
+    background: #292929;
+    margin: 15px 0 ;
+}
+.copy{
+    color: #585858;
+    margin-top: 32px;
+}
+
+.social a{
+    display:inline-block;/*to come in same line*/
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+}
+.social a:hover{
+    background: white;
+    color: red;
+}
+.social li{
+    display: inline-block;
+}
+
